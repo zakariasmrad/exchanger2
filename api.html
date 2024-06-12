@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="api.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="api.js" defer></script>
+    <title>Exchanger</title>
+</head>
+<body>
+    <div class="search" id="search">
+        <h1>CashMorphics</h1>
+        <hr>
+        <div><input type="text" class="base ser" placeholder="from FOR EXAMPLE: USD"></div>
+        <button class="exchange"><i class='fas fa-sync-alt' style='font-size:36px'></i></button>
+        <div><input type="text" class="result ser" id="ser" placeholder="to  FOR EXAMPLE: LBP"></div>
+        <div class="loading"></div>
+        <button class="back" onclick="after()">History</button>
+        <section class="hist" id="hist">
+        <button class="back" onclick="reset()">Reset your History</button>
+        <ul id="history" class="history"></ul>
+    </div>
+</section>
+</body>
+</html>
